@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>form</h3>
+        <!-- action se backend connection bana oo -->
+        <form action="./action.ts">
+            <input type="text" placeholder="username">
+            <br>
+            <input type="password" placeholder="password">
+            <br><br>
+            <!-- radio se bs ek select ho ga -->
+            <label for="101">
+                <input type="radio" value="class X" name="class" id="101">class X
+            </label>
+            <label for="102">
+                <input type="radio" value="class XI" name="class" id="102">class XI
+            </label>
+            <br><br>
+            <!-- checkbox se multiple select kr sak te hai -->
+            <label for="math">
+                <input type="checkbox" value="math" name="sunject" id="math">math
+            </label>
+            <label for="physics">
+                <input type="checkbox" value="physics" name="sunject" id="physics">physics
+            </label>
+            <br><br>
+            <select name="CITY" id="106">
+                <option value="DELHI">DELHI</option>
+                <option value="RAJASTHAN">RAJASTHAN</option>
+                <option value="MUMBAI">MUMBAI</option>
+            </select>
+            <br><br>
+            <!-- feedback -->
+            <textarea name="feedback" id="101" placeholder="feedback de be sale" rows="5"> Feedback</textarea>
+            <br><br>
+            <!-- submition -->
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
