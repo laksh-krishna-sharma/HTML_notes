@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
     </head>
+    <!-- page layout is used to improve SEO -->
     <body>
         <!-- page loyout tags are of two types semantic and non-semantic -->
         <!-- semantic = header,footer,main -->
@@ -14,13 +15,135 @@
             </pre>
         </header>
         <main>
+            <!-- main tag mai or 3 tags aa te hai = section,artical,aside -->
+            <section>
+                section 1
+            </section>
+            <section>
+                section 2
+            </section>
+            <article>
+                body ka sara content likh daal
+            </article>
+            <aside>
+                adds wagera ya or faltu maal yaha daal do jis se SEO ko farak na pade
+            </aside>
+           
+            <!-- link laga ne ke liya a tag use kr te hai aur link ko doosre page mai khol na ho to targate bhi use kr lo -->
+            <a href="https://www.youtube.com/watch?v=HcOc7P5BMi4" target="_main">HTML ki video</a><br>
 
+            <!-- image par click kr ke link khol ne ke liya name ki gajha image laga do -->
+            <a href="https://www.youtube.com/watch?v=HcOc7P5BMi4" target="_main"><img src="https://techbeacon.com/sites/default/files/styles/social/public/html5-mobile-app-native-hybrid-pros-cons.jpg?itok=R3pMKIzh" alt="html5 ki photo hai" height = "200"></a>
         </main>
         <footer>
             <h5>contact me at laksh@mail.com</h5>
         </footer>
-        <!-- non-semantic = div,spam etc. -->
-        <!-- div tag = rectangle jis ki hight = 0 aur width full  -->
+
+        <!-- non-semantic = div,span etc. -->
+        <!-- div tag = inline element = rectangle jis ki hight = 0 aur width full  -->
         <!-- div ki height us ke children ki height ke equal ho ti hai -->
+        <div></div>
+        <div>
+            <p>
+                uppar wale div ki height 0 hai or is wale ki kuch to height ho gi
+            </p>
+        </div>
+
+        <!-- span bhi rectangle ho ta hai bs faltu space nahi le ta zarurat ke hisab se chl ta hai  -->
+        <span>
+            ye wala kifaity hai 
+        </span>
+        <!-- list => 2 type ki ho ti ha => 1) unordered point ya kisi or symbol mai likhi hui => 2) ordered number mai likhe hua points -->
+        <!-- unordered -->
+        <ul>
+            <li>ek</li>
+            <li>do</li>
+            <li>teen</li>
+            <ul>
+                <li>ye nested unorderer | unordered ke andar he</li>
+            </ul>
+            <ol>
+                <li> ek ye nested orderer | unordered ke andar he</li>
+                <li> do ye nested orderer | unordered ke andar he</li>
+            </ol>
+        </ul>
+        <!-- ordered -->
+        <ol>
+            <li>ek</li>
+            <li>do</li>
+            <li>teen</li>
+            <ul>
+                <li>ye nested unorderer | ordered ke andar he</li>
+            </ul>
+            <ol>
+                <li> ek ye nested orderer | ordered ke andar he</li>
+                <li> do ye nested orderer | ordered ke andar he</li>
+            </ol>
+        </ol>
+
+        <!-- TABLE => tr = table row, td = table data, th = table header -->
+        <table>
+            <!-- thead ye sara header ka maal wrap kro -->
+            <thead>
+                <!-- caption -->
+                <caption>DARU</caption>
+                <tr>
+                    <th>
+                        name
+                    </th>
+                    <th>
+                        type
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        JD
+                    </td>
+                    <td>
+                        whisky
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>
+                        sky
+                    </td>
+                    <td>
+                        vodka
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">
+                        DARU
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        JD
+                    </td>
+                    <td>
+                        whisky
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>
+                        sky
+                    </td>
+                    <td>
+                        vodka
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>
